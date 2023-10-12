@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := D:/ti/CCS9.2/ccs/tools/compiler/ti-cgt-c2000_20.2.3.LTS
+CG_TOOL_ROOT := D:/Coding/environment/ti/ccs920/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
@@ -153,14 +153,14 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 Lab01_GPIO_LED.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: C2000 Linker'
-	"D:/ti/CCS9.2/ccs/tools/compiler/ti-cgt-c2000_20.2.3.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"Lab01_GPIO_LED.map" --stack_size=0x200 --warn_sections -i"D:/ti/CCS9.2/ccs/tools/compiler/ti-cgt-c2000_20.2.3.LTS/lib" -i"D:/ti/CCS9.2/ccs/tools/compiler/ti-cgt-c2000_20.2.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab01_GPIO_LED_linkInfo.xml" --rom_model -o "Lab01_GPIO_LED.out" $(ORDERED_OBJS)
+	"D:/Coding/environment/ti/ccs920/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"Lab01_GPIO_LED.map" --stack_size=0x200 --warn_sections -i"D:/Coding/environment/ti/ccs920/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS/lib" -i"D:/Coding/environment/ti/ccs920/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="Lab01_GPIO_LED_linkInfo.xml" --rom_model -o "Lab01_GPIO_LED.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 Lab01_GPIO_LED.hex: $(EXE_OUTPUTS)
 	@echo 'Building files: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo 'Invoking: C2000 Hex Utility'
-	"D:/ti/CCS9.2/ccs/tools/compiler/ti-cgt-c2000_20.2.3.LTS/bin/hex2000"  -o "Lab01_GPIO_LED.hex" $(EXE_OUTPUTS__QUOTED)
+	"D:/Coding/environment/ti/ccs920/ccs/tools/compiler/ti-cgt-c2000_20.2.2.LTS/bin/hex2000"  -o "Lab01_GPIO_LED.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building: $(strip $(EXE_OUTPUTS__QUOTED))'
 	@echo ' '
 

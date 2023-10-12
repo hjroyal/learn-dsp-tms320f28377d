@@ -1,7 +1,7 @@
 ******************************************************************************
              TMS320C2000 Linker PC v20.2.2                     
 ******************************************************************************
->> Linked Mon Sep 28 10:42:18 2020
+>> Linked Thu Oct 12 16:03:12 2023
 
 OUTPUT FILE NAME:   <Lab01_GPIO_LED.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0000b585
@@ -621,7 +621,7 @@ MODULE SUMMARY
     +--+--------------------------------+------+------------------+--------------------+
        Total:                           2913   448                8047              
                                                                                     
-    D:\ti\ccsv8\tools\compiler\lib\rts2800_fpu32.lib
+    D:\Coding\environment\ti\ccs920\ccs\tools\compiler\ti-cgt-c2000_20.2.2.LTS\lib\rts2800_fpu32.lib
        boot28.asm.obj                   86     0                  0                 
        exit.c.obj                       41     14                 6                 
        cpy_tbl.c.obj                    36     0                  0                 
