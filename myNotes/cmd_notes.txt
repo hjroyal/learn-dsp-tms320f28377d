@@ -1,0 +1,8 @@
+CCS是一个套壳的eclipse编辑器，编译器是gmake。故可以在VSCode中实现，配置好编译器路径即可。
+
+在VScode中打开C/C++配置，会自动创建c_cpp_properties.json配置文件，编译路径替换会CCS安装目录下gmake路径。
+
+导航到Debug目录，输入编译命令，即可生成.out文件。
+
+cd ./Debug
+gmake -k -j all -O
